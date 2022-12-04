@@ -73,3 +73,25 @@ body {
 .col-2{
     grid-column: span 2;
 }
+
+/* Media Query for Width <= 1024px */
+@media screen and (max-width:1024px) {
+    .container{
+        flex-direction: column;
+    }   
+
+    .gallery{
+        width: 100%;
+        padding-inline: 15px;
+        grid-auto-rows: 220px;
+    }
+
+    .box{
+        grid-row: span 1;
+        grid-column: span 3;
+    }
+
+    .subheading{
+        padding: 0 50px 0;
+    }
+}
